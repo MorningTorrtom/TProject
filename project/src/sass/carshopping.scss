@@ -1,0 +1,444 @@
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul,ol,li{
+  list-style: none;
+}
+img { border: none; }
+i,em{font-style: normal;}
+body{
+  font-family: 宋体;
+}
+//search 搜索框栏
+.search{
+  width: 1190px;
+  height: 130px;
+  margin: 0 auto;
+  position: relative;
+}
+.search_content{
+  width: 100%;
+  .search_img{
+    width: 290px;
+    height: 100px;
+    float: left;
+    background: #0077aa;
+  }
+}
+.search_form{
+  width: 425px;
+  height: 78px;
+  position: absolute;
+  right: 40px;
+  top:50px;
+  form{
+    width: 371px;
+    border-width: 2px 0 2px 2px ;
+    border-color: #ff0036;
+    border-style: solid;
+
+    & .clearfix:after{
+      content:"";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+  }
+  .text{
+    height:26px;
+    #search{
+      width: 280px;
+      height: 12px;
+      padding: 5px 2px 5px 5px;
+      float: left;
+      outline: none;
+    }
+    #searchbtn{
+      width: 80px;
+      height: 26px;
+      background:#ff0036;
+      float: left;
+      letter-spacing: 5px;
+      border: 0;
+      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: '\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53"
+
+    }
+  }
+}
+
+#container{
+  height: auto;
+}
+//购物车
+.w{
+  width:1190px;
+  margin:0 auto;
+}
+//全部商品title
+.cart-top{
+  margin-top: 10px;
+  .cart-top-left{
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    float: left;
+    font-weight: 700;
+    a{
+      color: #e4393c;
+      em{
+        margin-right: 5px;
+      }
+    }
+  }
+  .footline{
+    clear: both;
+    height: 1px;
+    background: #e0e0e0;
+    position: relative;
+    .line{
+      width: 80px;
+      height: 2px;
+      background: #e4393c;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+}
+
+//购物车列表
+.cart-wrap{
+  background: #fff;
+  margin-bottom: 20px;
+  .cart-thead{
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0 10px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+    .cart-col{
+      float: left;
+    }
+    .checkbox{
+      height: 18px;
+      line-height: 18px;
+      padding-top: 7px;
+      width: 122px;
+      padding-left: 11px;
+    }
+
+    .cart-checkbox input{
+      margin-right: 5px;
+    }
+    .goods{
+      width: 208px;
+    }
+
+    .props{
+      width: 140px;
+      height: 32px;
+      padding: 0 20px;
+      text-align: right;
+    }
+    .prices{
+      width: 120px;
+      padding-right: 40px;
+      text-align: right;
+      height: 32px;
+    }
+
+    .quantity{
+      text-align: center;
+      width: 80px;
+    }
+
+    .sum{
+      width: 100px;
+      padding-right: 40px;
+      text-align: right;
+    }
+  }
+
+  .cart-item-list{
+    margin-bottom: 20px;
+    .item-list{
+      border-style: solid;
+      border-width: 2px 1px 1px;
+      border-color: #aaa #f1f1f1 #f1f1f1;
+      background: #fff;
+    }
+    .goods-item {
+      padding: 0 10px 0 40px;
+      position: relative;
+      .b-goods {
+        width: 300px;
+        padding: 15px 0 10px 0;
+      }
+    }
+    .goods-item-sele{
+      background: #fff4e8;
+      .goods-info{
+        border-top: 1px solid #f1f1f1;
+        overflow: hidden;
+      }
+    }
+    .cell{
+      float: left;
+      .b-checkbox{
+        position: absolute;
+        left: 10px;
+        width: 30px;
+        height: 20px;
+        padding: 15px 0 10px 0;
+        input{
+          position: absolute;
+          z-index: 2;
+        }
+      }
+    }
+    .cart-checkbox{
+      .line-circle{
+        position: absolute;
+        left: 2px;
+        top: -5px;
+        display: block;
+        width: 7px;
+        height: 29px;
+      }
+    }
+  }
+  .b-goods{
+    .goods-pic{
+      width: 82px;
+      height: 82px;
+      margin-right: 10px;
+      border: 1px solid #eee;
+      float: left;
+      img{
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .goods-d-info{
+      height: 40px;
+      line-height: 20px;
+      overflow: hidden;
+    }
+    .goods-ex{
+      margin-top: 2px;
+      .promise{
+        margin: 0 10px 0 0;
+        display: block;
+        min-height: 18px;
+        line-height: 18px;
+        margin-bottom: 2px;
+        i{
+          display: inline-block;
+          width: 17px;
+          height: 16px;
+          vertical-align: middle;
+        }
+        a{
+          display: inline-block;
+          padding: 1px 4px 0 7px;
+          height: 15px;
+          line-height: 15px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .b-props{
+    height: 80px;
+    padding: 15px 10px 0 10px;
+    overflow: hidden;
+    .prop-text{
+      width: 160px;
+    }
+  }
+  .b-price{
+    width: 120px;
+    padding: 15px 40px 10px 0;
+    overflow: hidden;
+    text-align: right;
+    strong{
+      display: block;
+    }
+    .sales-promotion{
+      display: block;
+      width: 53px;
+      border: 1px solid #f9d2d3;
+      color: #e4393c;
+      height: 18px;
+      text-align: left;
+      line-height: 17px;
+      padding: 0 15px 0 8px;
+      cursor: pointer;
+      background: #fff;
+      text-decoration: none;
+      float: right;
+      overflow: hidden;
+      position: relative;
+      b{
+        display: inline-block;
+        width: 7px;
+        height: 4px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+      }
+    }
+  }
+  .b-quantity{
+    width: 80px;
+    padding: 15px 0 10px;
+    .quantity-form{
+      position: relative;
+      overflow: hidden;
+      height: 20px;
+      border: 1px solid #cacbcb;
+      a{
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        padding: 1px 0;
+        width: 16px;
+        text-align: center;
+        color: #666;
+        margin: 0;
+        background: #fff;
+        float: left;
+      }
+      .quantity-down{
+        border-right: 1px solid #cacbcb;
+      }
+      input{
+        width: 40px;
+        height: 22px;
+        line-height: 22px;
+        float: left;
+        text-align: center;
+        background: white;
+      }
+      .quantity-add{
+        border-left: 1px solid #cacbcb;
+      }
+    }
+  }
+  .quantity-text{
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+  }
+  .b-sum{
+    width: 100px;
+    height: 20px;
+    padding: 15px 40px 15px 0;
+    text-align: right;
+    strong{
+      color: #333;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+
+  .b-action{
+    padding: 15px 0 10px 0;
+    a{
+      display: block;
+      width: 75px;
+      height: 20px;
+    }
+  }
+
+  #cart-floatbar{
+    width: 1190px;
+    height: 50px;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    position: relative;
+    .select-all{
+      float: left;
+      height: 18px;
+      line-height: 18px;
+      padding: 16px 0 16px 9px;
+    }
+    .operation{
+      float: left;
+      height: 50px;
+      width: 260px;
+      line-height: 50px;
+      a{
+        margin-left: 20px;
+        display: inline-block;
+        height: 50px;
+        color: #999;
+      }
+    }
+    .toolbar-right{
+      overflow: hidden;
+      .btn-area{
+        float: right;
+        a{
+          display: block;
+          width: 96px;
+          height: 52px;
+        }
+      }
+    }
+    .price-sum{
+      float: right;
+      height: 43px;
+      line-height: 20px;
+      margin: 7px 20px 0 10px;
+      color: #666;
+      width: 220px;
+      span{
+        display: inline-block;
+        width: 110px;
+        height: 20px;
+        float: left;
+        text-align: left;
+      }
+      .txt{
+        text-align: right;
+        font-size: 12px;
+      }
+      .totalprice{
+        font-size: 18px;
+        color: #e4393c;
+        font-weight: 700;
+      }
+    }
+    .amount-sum{
+      float: right;
+      color: #999;
+      height: 44px;
+      line-height: 20px;
+      margin: 7px 0 0;
+      cursor: pointer;
+      em{
+        color: #e4393c;
+        font-family: verdana;
+        font-weight: 700;
+        margin: 0 3px;
+      }
+      b{
+        display: inline-block;
+        width: 9px;
+        height: 5px;
+        vertical-align: middle;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul,ol,li{
+  list-style: none;
+}
+%center{
+  width: 1190px;
+  margin: 0 auto;
+}
+.header{
+  height: 88px;
+  .header_img{
+    @extend %center;
+   padding-top:25px ;
+    img{
+      width: 190px;
+    }
+  }
+}
+//content盒子
+.content{
+  background: #338ce6;
+  .login_content{
+    height: 600px;
+    position: relative;
+    @extend %center;
+    background: url("https://img.alicdn.com/tps/i4/TB1.tzIbsKfxu4jSZPfSuv3dXXa.jpg") center;
+  }
+  .login_box {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background: #fff;
+    .btn_box {
+      width: 52px;
+      height: 52px;
+      background: #ff0036;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      text-align: center;
+      padding-top: 5px;
+      cursor: pointer;
+    }
+
+    //免费注册行
+    %login_link {
+      height: 18px;
+      margin-top: 25px;
+      a {
+        float: left;
+        font-size: 12px;
+        margin-right: 8px;
+        color: #6c6c6c;
+      }
+    }
+    .box_center {
+      margin: 0 auto;
+      background: #fff;
+
+      //手动登录页box_center_1
+      #box_center_1 {
+        width: 350px;
+        height: 400px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: #fff;
+        padding: 25px 26px 20px;
+        .promot {
+          font-size: 16px;
+          margin-top: 15px;
+        }
+
+        .input {
+          margin-top: 25px;
+          height: 42px;
+          border-right: 0px !important;
+
+          .form-control {
+            height: 42px;
+          }
+        }
+        .btn {
+          margin-top: 20px;
+          width: 300px;
+          height: 42px;
+          background: #ff0036;
+          letter-spacing: 10px;
+          color: #fff;
+          font-size: 16px;
+          border-radius: 0px;
+        }
+        .login_link {
+          @extend %login_link;
+          margin-left: 115px;
+        }
+      }
+
+      //扫码登录页box_center_2
+      #box_center_2 {
+        background: #fff;
+        width: 350px;
+        height: 400px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 25px 26px 20px;
+        display: none;
+        .login_link {
+          @extend %login_link;
+          margin-left: 185px;
+        }
+      }
+      .img {
+        width: 300px;
+        height: 140px;
+        margin: 25px 0;
+        #sao_pic {
+          margin-left: 80px;
+        }
+      }
+      .saoyisao_promot {
+        width: 188px;
+        margin: 0 auto;
+        font-size: 12px;
+        span {
+          display: block;
+          a {
+            color: #ff0036;
+          }
+        }
+      }
+    }
+  }
+}
+.footer{
+     padding-top: 20px;
+     width: 1190px;
+     margin: 0 auto;
+      text-align: left;
+      min-height: 177px;
+     font-size: 12px;
+      .footer_three_contentr{
+        width: 1190px;
+        margin: 0 auto;
+      }
+      .footer_relatedsites{
+        margin-top: 20px;
+        color: #fff;
+        a{
+          margin-right: 10px;
+          color: black;
+        }
+      }
+      .footer_information{
+        width: 1190px;
+        font-size: 12px;
+        color: #666;
+        line-height: 20px;
+      }
+      .footer-img{
+        display: block;
+      }
+}

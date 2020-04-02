@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="keywords" content="商城,网上购物,网购,进口食品,美容护理,母婴玩具,家用电器,手机数码,家居生活,服饰内衣,营养保健,钟表珠宝,饰品箱包,汽车生活,图书音像,礼品卡"/>
+    <meta name="description" content="天猫，中国线上购物的地标网站，亚洲超大的综合性购物平台，拥有10万多品牌商家。每日发布大量国内外商品！正品网购，上天猫！天猫千万大牌正品,品类全，一站购，支付安全，退换无忧！理想生活上天猫!"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="//img.alicdn.com/tfs/TB1XlF3RpXXXXc6XXXXXXXXXXXX-16-16.png" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="../sass/carshopping.css">
+</head>
+<body>
+<div class="header"></div>
+<div class="search">
+    <div class="search_content">
+        <div class="search_img">
+            <img src="https://img.alicdn.com/tps/i4/TB1.QwnzEY1gK0jSZFMtKaWcVXa.gif" alt="">
+        </div>
+        <div class="search_form">
+            <form action="" method="" class="clearfix">
+                <div class="text">
+                    <input type="text" id="search">
+                    <button id="searchbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="container" class="cart">
+    <div class="w">
+        <!--全部商品title-->
+        <div class="cart-top" style="display: block;">
+            <div class="cart-top-left">
+                <a href=""><em>全部商品</em></a>
+            </div>
+            <div class="footline">
+                <div class="line"></div>
+            </div>
+        </div>
+        <!--购物车列表-->
+        <div class="cart-wrap" style="display: block;">
+            <div class="w">
+                <div id="tm-cart">
+                    <div class="cartmain">
+                        <div class="cart-thead">
+                            <div class="cart-col checkbox">
+                                <div class="cart-checkbox">
+                                    <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                </div>
+                            </div>
+                            <div class="cart-col goods">商品</div>
+                            <div class="cart-col props"></div>
+                            <div class="cart-col prices">单价(元)</div>
+                            <div class="cart-col quantity">数量</div>
+                            <div class="cart-col sum">小计(元)</div>
+                            <div class="cart-col action">操作</div>
+                        </div>
+                        <div id="cart-list">
+                            <div class="cart-item-list">
+                                <div class="cart-tbody">
+                                    <!-- 显示购物车列表 -->
+                                    <div class="item-list">
+                                        <div class="goods-item goods-item-sele" style="display: none;">
+                                            <div class="goods-info">
+                                                <div class="cell b-checkbox">
+                                                    <div class="cart-checkbox">
+                                                        <input type="checkbox" checked="" name="" value="" />
+                                                        <span class="line-circle"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="cell b-goods">
+                                                    <div class="goods-name">
+                                                        <div class="goods-pic">
+                                                            <a href=""><img src="" alt="" /></a>
+                                                        </div>
+                                                        <div class="goods-msg">
+                                                            <div class="goods-d-info">
+                                                                <a href="">Apple iMac 27英寸一体机（Core i5
+                                                                    处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                            </div>
+                                                            <div class="goods-ex">
+                                                                <span class="promise"></span>
+                                                                <span class="promise">
+                                                                        <i></i><a href="">购买天猫服务</a>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cell b-props">
+                                                    <div class="prop-text"></div>
+                                                </div>
+                                                <div class="cell b-price">
+                                                    <strong>13488.00</strong>
+                                                    <a class="sales-promotion" href="">
+                                                        促销优惠
+                                                        <b></b>
+                                                    </a>
+                                                    <div class="sales-promotion-dropdown">
+                                                    </div>
+                                                </div>
+                                                <div class="cell b-quantity">
+                                                    <div class="quantity-form">
+                                                        <a class="quantity-down" href="javascript:;">-</a>
+                                                        <input type="text" value="1" />
+                                                        <a class="quantity-add" href="javascript:;">+</a>
+                                                    </div>
+                                                    <div class="quantity-text">有货</div>
+                                                </div>
+                                                <div class="cell b-sum">
+                                                    <strong>13488.00</strong>
+                                                </div>
+                                                <div class="cell b-action">
+                                                    <a href="javascript;">删除</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart-floatbar">
+                    <div class="select-all">
+                        <div class="cart-checkbox">
+                            <input type="checkbox" checked="" name=""  class="allsel" value="" /> 全选
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:void(0)">删除选中的商品</a>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="btn-area">
+                            <a href=""></a>
+                        </div>
+                        <div class="price-sum">
+                            <span class="txt">总价（不含运费）：</span>
+                            <span class="totalprice">￥0.00</span>
+                            <span class="txt">已节省：</span>
+                            <span class="totalsave">-￥0.00</span>
+                        </div>
+                        <div class="amount-sum">
+                            已选择
+                            <em>0</em> 件商品
+                            <b></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../script/jscookie.js"></script>
+<script src="../script/carshopping.js"></script>
+<script>
+    $(".header").load("header.html");
+    $(".footer").load("footer.html");
+</script>
+</body>
+</html>
